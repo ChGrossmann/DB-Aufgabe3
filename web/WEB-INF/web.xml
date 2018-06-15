@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>SearchProduct</servlet-name>
+        <servlet-class>ch.teko.grossmac.db4.a3.SearchProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewProduct</servlet-name>
+        <servlet-class>ch.teko.grossmac.db4.a3.NewProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchArtikelNrProduct</servlet-name>
+        <servlet-class>ch.teko.grossmac.db4.a3.SearchArtikelNrProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchBezeichnungProduct</servlet-name>
+        <servlet-class>ch.teko.grossmac.db4.a3.SearchBezeichnungProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchProduct</servlet-name>
+        <url-pattern>/SearchProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewProduct</servlet-name>
+        <url-pattern>/NewProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchArtikelNrProduct</servlet-name>
+        <url-pattern>/SearchArtikelNrProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchBezeichnungProduct</servlet-name>
+        <url-pattern>/SearchBezeichnungProduct</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
