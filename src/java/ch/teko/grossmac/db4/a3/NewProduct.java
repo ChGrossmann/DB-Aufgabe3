@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import ch.teko.grossmac.db4.a3.beans.Product;
-import ch.teko.grossmac.db4.a3.dao.NewProductDao;
+import ch.teko.grossmac.db4.a3.dao.ProductDao;
 
 /**
  *
@@ -32,7 +32,7 @@ public class NewProduct extends HttpServlet {
         
 
         // DAO Layer aufrufen
-        NewProductDao dao = new NewProductDao();
+        ProductDao dao = new ProductDao();
         List<Product> newProduct = dao.newProductDao( newArtikelnummer, newBezeichnung, newMenge, newEinheit, newPreis);
 
         // Daten an JSP Datei übergeben

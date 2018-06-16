@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import ch.teko.grossmac.db4.a3.beans.Product;
-import ch.teko.grossmac.db4.a3.dao.SearchArtikelNrProductDao;
+import ch.teko.grossmac.db4.a3.dao.ProductDao;
 
 /**
  *
@@ -23,8 +23,8 @@ public class SearchArtikelNrProduct extends HttpServlet {
         String searchString = req.getParameter("searchArtikelNr");
 
         // DAO Layer aufrufen
-        SearchArtikelNrProductDao dao = new SearchArtikelNrProductDao();
-        List<Product> searchProducts = dao.searchProductsDao(searchString);
+        ProductDao dao = new ProductDao();
+        List<Product> searchProducts = dao.searchArtikelNrProducts(searchString);
 
         // Daten an JSP Datei übergeben
         req.setAttribute("SearchProducts", searchProducts);
