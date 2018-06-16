@@ -30,27 +30,27 @@
             </th>
             
             
-            <th align="center" valign="top" width="800">
+            <th align="center" valign="top" width="500">
                 
             <h1>Artikel suchen</h1>
             
-            <pre>
-            <form action="SearchArtikelNrProduct">
-                <label for="name">ArtikelNr</label>
-                <input type="text" name="searchArtikelNr">
-                <input type="submit" value="Suchen">
-            </form>
-            
-            <form action="SearchBezeichnungProduct">
-                <label for="name">Bezeichnung</label>
-                <input type="text" name="searchBezeichnung">
-                <input type="submit" value="Suchen">
-            </form>
-            </pre>
+<pre>
+<form action="SearchArtikelNrProduct">
+    <label for="name">ArtikelNr</label>
+    <input type="text" name="searchArtikelNr">
+    <input type="submit" value="Suchen">
+</form>
+
+<form action="SearchBezeichnungProduct">
+    <label for="name">Bezeichnung</label>
+    <input type="text" name="searchBezeichnung">
+    <input type="submit" value="Suchen">
+</form>
+</pre>
 
             <% if (request.getAttribute("SearchProducts") != null) {%>
             <h1>Resultat</h1>
-            <div>
+            
 
                 <table>
 
@@ -92,7 +92,7 @@
                     }
                 %>
 
-            </div>
+            
             </th>
         </tr>
     </table>

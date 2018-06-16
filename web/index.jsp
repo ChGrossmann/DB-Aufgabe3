@@ -20,12 +20,13 @@
                     <li><a href="showProduct.jsp">Artikel suchen</a></li>
                     <li><a href="addProduct.jsp">Artikel erfassen</a></li>
                     
+                    
                 </ol>
             </ol>
             </th>
             
             
-            <th align="center" valign="top" width="800">
+            <th align="center" valign="top" width="500">
             <h1>Artikel auflisten</h1>
             
             <form action="SearchProduct">

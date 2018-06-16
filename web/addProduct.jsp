@@ -31,10 +31,11 @@
                     </ol>
                 </th>
 
-                <th align="center" valign="top" width="800">
+                <th align="center" valign="top" width="500">
+                    
                     <h1>Artikel hinzufügen</h1>
 
-                    <pre>                
+<pre>                
 <form action="NewProduct">
 
 <label for="name">Artikelnummer</label>
@@ -54,7 +55,7 @@
 
 <input type="submit" value="Hinzufügen" />
   </form>
-             </pre>      
+</pre>      
                     
                     <a href="index.jsp">Zurück</a>
                 </th>
@@ -62,10 +63,10 @@
 
                 <tr>
                     <th align="left" valign="top" hight="1000" width="300"></th>
-                    <th align="center" valign="top" width="800">
+                    <th align="center" valign="top" width="500">
             <% if (request.getAttribute("Products") != null) {%>
             <h1>Resultat</h1>
-            <div>
+            
 
                 <table border="1">
 
@@ -89,7 +90,7 @@
                     }
                 %>
 
-            </div>
+            
                     </th>
         </tr>
 </table>
