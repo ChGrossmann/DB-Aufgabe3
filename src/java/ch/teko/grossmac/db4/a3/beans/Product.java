@@ -3,7 +3,7 @@ package ch.teko.grossmac.db4.a3.beans;
 public class Product {
 
     private int productId;    
-    private int productNumber;
+    private String productNumber;
     private String productName;
     private int productValue;
     private String productUnit;
@@ -17,11 +17,11 @@ public class Product {
         this.productId = productId;
     }
 
-    public int getProductNumber() {
+    public String getProductNumber() {
         return productNumber;
     }
 
-    public void setProductNumber(int productNumber) {
+    public void setProductNumber(String productNumber) {
         this.productNumber = productNumber;
     }
 

@@ -51,7 +51,7 @@
             <% if (request.getAttribute("SearchProducts") != null) {%>
             <h1>Resultat</h1>
             
-
+            
                 <table>
 
                     <%  ArrayList<Product> searchProducts = (ArrayList) request.getAttribute("SearchProducts");
@@ -65,7 +65,6 @@
                         <th>Bezeichnung: </th>
                         <th><%= s.getProductName()%></th>
                         </tr>
-                        
                         <tr>
                         <th>Menge: </th>
                         <th><%= s.getProductValue()%></th>
@@ -78,16 +77,17 @@
                         <th>Preis: </th>
                         <th><%= s.getProductPrice()%></th>
                         </tr>
-                        <br>
-                        <br>
+                        
+                        
                         
 
-                    </tr>
+                   
                     <%
                         }
                     %>
 
                 </table>
+                   
                 <%
                     }
                 %>

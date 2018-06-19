@@ -31,7 +31,7 @@ public class ProductDao {
 
             while (set.next()) {
                 product = new Product();
-                product.setProductNumber(set.getInt("artikelnummer"));
+                product.setProductNumber(set.getString("artikelnummer"));
                 product.setProductName(set.getString("bezeichnung"));
                 product.setProductValue(set.getInt("menge"));
                 product.setProductUnit(set.getString("einheit"));
@@ -64,7 +64,8 @@ public class ProductDao {
         try {
             Connection connection = DBConnection.connect();
 
-            String sql = "SELECT * FROM artikelliste WHERE artikelnummer = " +  searchString;
+            String sql = "SELECT * FROM artikelliste WHERE artikelnummer LIKE "
+                    + "'%" +  searchString +"%'";
 
             Statement statement = connection.createStatement();
 
@@ -73,7 +74,7 @@ public class ProductDao {
 
             while (set.next()) {
                 product = new Product();
-                product.setProductNumber(set.getInt("artikelnummer"));
+                product.setProductNumber(set.getString("artikelnummer"));
                 product.setProductName(set.getString("bezeichnung"));
                 product.setProductValue(set.getInt("menge"));
                 product.setProductUnit(set.getString("einheit"));
@@ -109,7 +110,7 @@ public class ProductDao {
             String sql = "INSERT INTO artikelliste (artikelnummer, bezeichnung, menge, einheit, preis) VALUES (?, ?, ?, ?, ?);";
 
             PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1, Integer.parseInt(newNumber));
+            statement.setString(1, newNumber);
             statement.setString(2, newName);
             statement.setInt(3, Integer.parseInt(newValue));
             statement.setString(4, newUnit.toUpperCase());
@@ -129,7 +130,7 @@ public class ProductDao {
             
             while (setSelect.next()) {
                 product = new Product();
-                product.setProductNumber(setSelect.getInt("artikelnummer"));
+                product.setProductNumber(setSelect.getString("artikelnummer"));
                 product.setProductName(setSelect.getString("bezeichnung"));
                 product.setProductValue(setSelect.getInt("menge"));
                 product.setProductUnit(setSelect.getString("einheit"));
