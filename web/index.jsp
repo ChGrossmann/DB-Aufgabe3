@@ -40,17 +40,23 @@
             <div>
 
                 <table border="1">
+                    
+                    <th width="70" >Artikelnummer</th>
+                    <th width="200">Bezeichnung</th>
+                    <th width="30">Menge</th>
+                    <th width="40">Einheit</th>
+                    <th width="30">Preis</th>
 
                     <%  ArrayList<Product> products = (ArrayList) request.getAttribute("Products");
                         for (Product p : products) {
                     %>
                     <tr>
                         
-                        <th width="70" ><%= p.getProductNumber()%></th>
-                        <th width="200"><%= p.getProductName()%></th>
-                        <th width="30"><%= p.getProductValue()%></th>
-                        <th width="40"><%= p.getProductUnit()%></th>
-                        <th width="30"><%= p.getProductPrice()%></th>
+                        <td width="70" ><%= p.getProductNumber()%></td>
+                        <td width="200"><%= p.getProductName()%></td>
+                        <td width="30"><%= p.getProductValue()%></td>
+                        <td width="40"><%= p.getProductUnit()%></td>
+                        <td width="30"><%= p.getProductPrice()%></td>
 
                     </tr>
                     <%

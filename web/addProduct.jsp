@@ -69,6 +69,12 @@
             
 
                 <table border="1">
+                    
+                    <th width="70" >Artikelnummer</th>
+                    <th width="200">Bezeichnung</th>
+                    <th width="30">Menge</th>
+                    <th width="40">Einheit</th>
+                    <th width="30">Preis</th>
 
                     <%  ArrayList<Product> newProduct = (ArrayList) request.getAttribute("Products");
                         for (Product p : newProduct) {
