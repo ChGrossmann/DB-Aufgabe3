@@ -10,6 +10,10 @@ import java.util.List;
 import ch.teko.grossmac.db4.a3.beans.Product;
 import java.sql.PreparedStatement;
 
+/**
+ *
+ * @author ch.grossmann
+ */
 public class ProductDao {
 
     public List<Product> searchBezeichnungProducts(String searchString) {

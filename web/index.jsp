@@ -20,6 +20,8 @@
                     <li><a href="showProduct.jsp">Artikel suchen</a></li>
                     <li><a href="addProduct.jsp">Artikel erfassen</a></li>
                     
+                    <li><a href="/DB Pruefung 4.Semester Web">Zur Doku</a></li>
+                    
                     
                 </ol>
             </ol>

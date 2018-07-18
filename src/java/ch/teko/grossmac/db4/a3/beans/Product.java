@@ -1,5 +1,9 @@
 package ch.teko.grossmac.db4.a3.beans;
 
+/**
+ *
+ * @author ch.grossmann
+ */
 public class Product {
 
     private int productId;    

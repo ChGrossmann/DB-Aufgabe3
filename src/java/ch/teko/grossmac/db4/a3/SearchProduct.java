@@ -12,7 +12,7 @@ import ch.teko.grossmac.db4.a3.dao.ProductDao;
 
 /**
  *
- * @author rainer
+ * @author ch.grossmann
  */
 public class SearchProduct extends HttpServlet {
 
